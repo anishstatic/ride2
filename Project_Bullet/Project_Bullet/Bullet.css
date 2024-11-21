@@ -1,0 +1,1622 @@
+*{
+    box-sizing: border-box;
+    color: rgba(35,39,44,.6);
+    overflow-x: hidden;
+}
+.header{
+    background: #fff;
+    position: relative;
+    position: sticky;
+    top: 0px;
+}
+.header .upperArea{
+    padding: 10px 0;
+}
+.first_container::before{
+    content: " ";
+    display: table;
+}
+.first_container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.first_row{
+    display: flex;
+}
+.first_row::before{
+    content: " ";
+    display: table;
+}
+.first_container::after ,.first_row::after{
+    clear: both;
+}
+.header .upperArea .logo{
+    margin-top: 4px;
+    min-height: 1px;
+    position: relative;
+}
+.header .upperArea .logo a{
+    display: block;
+    width: 174px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.header .upperArea .logo img{
+    height:42px;
+    margin: 0;
+    max-width: 100%;
+    width: 174px;
+    border: none;
+    display: block;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.first_col-sm-5{
+    min-height: 1px;
+    position: relative;
+    float:left;
+}
+.header .upperArea .searchBar{
+    z-index: 5;
+}
+.header .upperArea .searchBar .icontainer{
+    padding-left: 22px;
+    margin-right: 60px;
+    width: 100%;
+}
+.header .upperArea .searchBar form{
+    margin: auto;
+    position: relative;
+    display:block;
+    padding-left: 0px;
+}
+.typeHead{
+    position: relative;
+}
+.header .upperArea .searchBar input{
+    background: #f7f7f7;
+    border: 0;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px 0 0 4px;
+    box-shadow: inset 0 1px 4px 0 rgba(0,0,0,0.1);
+    color: #24272c;
+    float: right;
+    font-size: 14px;
+    height: 48px;
+    line-height: 18px;
+    margin-right: 60px;
+    padding: 0 20px;
+    text-overflow: ellipsis;
+    width: 1100px;
+    
+}
+.header .upperArea .searchBar .searchbtn{
+    background: #24272c;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 48px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+button,select{
+    text-transform: none;
+}
+button,input{
+    overflow: visible;
+}
+.first_col-sm-4{
+    padding-left:90px;
+    padding-right: 10px;
+    width:15%;
+    float: right;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.header .upperArea .login_btn li .username {
+    cursor: pointer;
+    display: inline-block;
+    max-width: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.header .upperArea .login_btn {
+    color: #1d1e1f;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 18px;
+    
+}
+.header .upperArea .login_btn .username i.userIcon {
+    background: 0 0;
+    border: none;
+    color: #24272c;
+    display: inherit;
+    font-weight: 500;
+    height: auto;
+    width: auto;
+}
+.header .upperArea .loginBtn i {
+    font-size: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-align: right;
+}
+.userIcon {
+    align-items: center;
+    background: #8ba1b9;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    height: 26px;
+    justify-content: center;
+    width: 26px;
+}
+/* login form */
+/* .login-form:active {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+    z-index: 100;
+  }
+  
+  .login-form.active {
+    transform: translateY(0);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .login-form form {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .login-form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+     border: none; cursor: pointer; font-size: 16px; border-radius: 4px; }
+
+    .login-form .links { margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; font-size: 14px; }
+    
+    .login-form .links a { color: #333; text-decoration: none; }
+    
+    .or-container { display: flex; align-items: center; margin-bottom: 20px; }
+    
+    .line { flex: 1; height: 1px; background-color: #ccc; }
+    
+    .or-container p { margin: 0 10px; font-size: 14px; }
+    
+    .social-login { display: flex; justify-content: center; }
+    
+    .social-login button { background-color: #3b5998; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; font-size: 16px; margin: 0 5px; cursor: pointer; }
+    
+    .social-login button:hover { background-color: #2d4373; }
+    
+    .social-login .google-btn { background-color: #ea4335; }
+    
+    .social-login .google-btn:hover { background-color: #c63122; } */
+
+
+/* .header .bottomArea {
+    border-top: 1px solid rgba(36,39,44,.1);
+    box-shadow: 0 3px 6px 0 rgba(36,39,44,.1);
+    position: relative;
+    z-index: 1;
+}
+.first_col-sm-12 .first_col-md-12{
+    min-height: 1px;
+    position: relative;
+}
+.header .bottomArea nav ul {
+    margin-right: 0;
+}
+.first_container::before{
+    content: " ";
+    display: table;
+}
+@media screen and (min-width: 1005px)
+{.header .bottomArea nav li, .header .bottomArea nav li:hover {
+    padding: 0 11px 0 0;
+}}
+
+@media screen and (min-width: 1005px)
+{.header .bottomArea nav li, .header .bottomArea nav li:hover {
+    padding: 0 11px 0 0;
+}}
+@media screen and (min-width: 1005px)
+{.header .bottomArea nav li, .header .bottomArea nav li:hover {
+  padding: 0 13px 0 0;
+}}
+.header .bottomArea nav li:hover {
+    cursor: pointer;
+    padding: 0;
+}
+.header .bottomArea nav li {
+    display: inline-block;
+    line-height: 90px;
+    position: relative;
+    width: auto;
+}
+li {
+    list-style: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul {
+    list-style-type: disc;
+    position: absolute;
+}
+.header .bottomArea nav li>a:hover, .header .bottomArea nav li>span:hover {
+    border-top: 3px solid #d02f2f;
+}
+
+@media screen and (min-width: 1005px)
+{.header .bottomArea nav li>a, .header .bottomArea nav li>span {
+    font-size: 14px;
+    padding: 0;
+}}
+.header .bottomArea nav li>a, .header .bottomArea nav li>span {
+    border-top: 3px solid transparent;
+    color: rgba(36,39,44,.87);
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    height: 51px;
+    line-height: 50px;
+    padding: 0 5px;
+    position: relative;
+    text-transform: uppercase;
+    top: -1px;
+}
+.header .bottomArea nav li .sub {
+    
+    background: #fff;
+    border: 1px solid rgba(36,39,44,.15);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.1);
+    left: -9999px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    display: none;
+    top: 51px;
+    transform: rotateX(-92deg);
+    transform-origin: 0 0;
+    
+    transition-behavior: normal, normal;
+    transition-duration: 0.8s, 0.4s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: transform, opacity;
+    width: 200px;
+    
+}
+
+
+.sub, .subInnerMenu {
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+    transform: translateY(10px);
+    isolation: isolate;
+  }
+  
+  .sub.visible, .subInnerMenu.visible {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+
+ .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252525;
+    padding: 15px;
+    
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  
+  .lgo {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 10px;
+    text-decoration: none;
+  }
+  .lgo a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 2px #737272;
+    font-style: italic;
+    font-weight: 600;
+  }
+  .lgo i{
+    padding-left: 40px;
+  }
+  .dropdown {
+    /* position: relative; */
+    
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    
+    background-color: #252525;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 540;
+    
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .dropdown-content a {
+    color: #000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 12px 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #2e2e2e;
+    color: red;
+  }
+  
+  .links a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  .links a:hover {
+    background-color: #2e2e2e;
+    color: red;
+  }
+
+
+
+/*HERO SECTION*/
+.hero-section {
+    height: 79vh;
+    width: 98vw;
+    background-image: url("royal\ enfield\ hero\ section.jpg");
+    background-position: center;
+    background-size:contain;
+    display: flex;
+    z-index: 0;
+    /* align-items: center; */
+    padding: 0 30px;
+    
+  }
+  
+  .hero-section .content {
+    max-width: 1300px;
+    
+    margin:  6rem 30rem;
+    width: 100%;
+    color: #000000;
+    
+  }
+  .hero-section .content h2 {
+    font-size: 3rem;
+    max-width: 600px;
+    line-height: 60px;
+  }
+  .hero-section .content p {
+    font-weight: 500;
+    font-size: 19px;
+    max-width: 700px;
+    letter-spacing: .9px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 15px;
+    color: white;
+  }
+  .hero-section .content button {
+    background: #fff;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    margin-top: 26px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  .hero-section .content button:hover {
+    color: #fff;
+    background: rgba(0,0,0,0.2);
+    font-weight: 600;
+  }
+
+
+  .news-title{
+    background-color: #21201f;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 60px;
+    
+    margin-bottom: 1px;
+  }
+  .news-section{
+    width: 100%;
+    height: 300px;
+    display: flex;
+  }
+  .news{
+    width: 25%;
+    height: 300px;
+    object-fit: fill;
+  }  
+  .news img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  .news .news-heading{
+    margin-top: -95px;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  .container_c{
+    position: relative;
+    width: 75vw;
+    height: 76vh;
+    top: 110px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 30px 50px #ededed;
+    border-radius: 10px;
+  }
+  .container_c .slider .item{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    top:50%;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #505050;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    transition: all 0.5s;
+  }
+
+  .slider .item:nth-child(1),
+  .slider .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    height: 100%;
+  }
+  .slider .item:nth-child(3)
+  {
+    left: 60%;
+  }
+  .slider .item:nth-child(4)
+  {
+    left: calc(60% + 220px);
+  }
+  .slider .item:nth-child(5)
+  {
+    left: calc(60% + 440px);
+  }
+  .slider .item:nth-child(n + 6)
+  {
+    left: calc(60% + 660px);
+    opacity: 0;
+   
+  }
+  .item .contant{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 100px;
+    text-align: left;
+    color: #fff;
+    width: 300px;
+    display: none;
+  }
+  .item:nth-child(2) .contant{
+    display: block;
+  }
+  .item .contant .name{
+    text-transform:uppercase ;
+    font-size:  41px;font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+  }
+  .item .contant .dec{
+    margin: 10px 0 10px;
+    font-size: 18px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+  }
+  .item .contant button{
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.5s;
+    opacity: 0;
+    border-radius: 5px;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+  }
+
+
+  .item .contant button:hover{
+    background-color: #eeee;
+    cursor: pointer;
+  }
+  @keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 110px);
+        filter: blur(33px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+  }
+
+  .buttonss{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+  }
+  .buttonss button{
+    margin: 0 15px;
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.5s;
+  }
+  .buttonss button:hover{
+    opacity: 0.7;
+  }
+  .bike-search-results { width: 100%; max-width: 1780px; margin-top: -120px; padding: 1rem; background-color: #3a3a3a; }
+
+  .bike-search-results h2 { font-size: 2.5rem; margin-bottom: 1rem; text-align: center; color: #fff; }
+  
+  .bike-search-results ul { list-style: none; padding: 5px; margin: 0; display: flex; justify-content: space-between; overflow-x: hidden; }
+  
+  .bike-search-results li { flex-basis: calc(33% - 2rem); margin-bottom: 2rem;
+    margin-left: 5px; padding: 15px;  box-shadow: 0 3px 0 0.5px rgba(99, 98, 98, 0.2); }
+  
+  .bike-image { width: 400px; height: 300px; padding-right: 7px;}
+  .bike-video{width: 400px; height: 300px; padding-right: 0px;}
+  .bike-search-results h3 { font-size: 1.8rem; margin: 1rem 0;color: #fff; }
+  
+  .price { font-size: 1.4rem; margin-bottom: 1rem; color:#fff;}
+  
+  .price sup { font-size: 0.8rem; }
+  
+  .view-offer-button { display: block; width: 100%; padding: 0.5rem; background-color: red; color: #fff;font-weight: 600;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; text-decoration: none; }
+  
+  .view-offer-button:hover { background-color: #e65136; }
+ 
+ .view-offer-button { display: block; width: 100%; padding: 0.5rem; background-color: red; color: #fff; text-align: center; text-decoration: none; }
+  .view-offer-button:hover { background-color: #b22727; } 
+  .shift-button { display: inline-block; padding: 0.5rem; background-color: #ddd; color: #333; text-align: center; text-decoration: none; margin-right: 1rem; } .shift-button:hover { background-color: #eee; } 
+
+ .has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
+
+ .hover\:shine { overflow: hidden; }
+
+.hover\:shine img {
+ 
+
+  transition: 0.5s ease;
+}
+
+.hover\:shine:is(:hover, :focus) img { transform: scale(1.15); }
+
+.hover\:shine::before {
+  top: 0;
+  left: -140%;
+  bottom: 0;
+  width: 100%;
+  background-image:  linear-gradient(to right, transparent 50%, #fff 130%);
+  transform: skewX(-25deg);
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.hover\:shine:is(:hover, :focus-within)::before { animation: shine 1.2s ease forwards; }
+@keyframes shine {
+    0% { transform: skewX(-25deg) translateX(0); }
+    100% { transform: skewX(-25deg) translateX(250%); }
+  }
+
+
+
+
+
+
+
+
+
+/* .Scrolls{
+  background: #f6f4f4;
+  width: 100%;
+  height:900px;
+} */
+.header1{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 7px 60px;
+  background: #21201f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header1 .logo1 {
+  font-size: 30px;
+  
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600 ;
+}
+.nav1 a{
+  font-size: 22px;
+  transition: .4s;
+  color: #fff;
+   
+  text-decoration: none;
+  background-color: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.nav1 a:hover
+ {
+  color: red;
+}
+.section1 {
+  height: 810px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  overflow-y: hidden;
+  font-size: 30px;
+  color: #ddd;
+  font-weight: 700;
+}
+.explore{
+  background: hsla(0, 14%, 97%, 0.5);
+  border:none;
+  padding-left: 7px;
+  width: 120px;
+  height: 50px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.explore:hover{
+  background-color: #fff;
+  transform: scale(1.1);
+  font-weight: 600;
+  
+}
+.section1:nth-child(1){
+  background-image: url(./interceptor_650_motorcycle.avif);
+  /* background-position: center; */
+  background-size: cover;
+  color: #000;
+  background-repeat: no-repeat;
+  border-bottom: #000;
+}
+.section1:nth-child(2){
+  background-image: url(./super-meteor-650---.avif);
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 780px;
+}
+.section1:nth-child(3){
+  background-image: url(./royal-enfield-scram-411-home-motorcycle.avif);
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section1:nth-child(4){
+  background-image: url(./hunter-350-motorcycle.jpg);
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 780px;
+}
+.section1:nth-child(5){
+  background-image: url(./meteor-350-home-motorcycle.avif);
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* .sec1{
+  background-image: url(./bullet\ 10.jpg);
+} */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 0px;
+}
+
+.card {
+  background-color: rgba(93, 92, 92, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.card video {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.card p span{
+  color: red;
+}
+.card button {
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.card button:hover {
+  background-color: #979899;
+}
+
+.fff{
+  background: #161515;
+}
+
+.features {
+  margin: 2rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow-x: hidden;
+  height: 600px;
+  box-shadow:10px #ffffff;
+}
+
+.features::before,
+.features::after{
+  position: absolute;
+  content: "";
+  background-color: #21201f;
+  inset: 0;
+  z-index: -1;
+}
+.features{
+  
+  clip-path: polygon(0 0,100% 20%, 100% 80%, 0% 100%);
+  /* transform: scaleX(8deg); */
+}
+
+
+.features_content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+  align-items: center;
+}
+.features_img img{
+  width: 750px;
+  height: 500px;
+  padding-left: 80px;
+  margin:12px;
+  padding-top: 50px;
+  animation: fadein 3s ease-in-out ;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation-delay: 10s; */
+}
+@keyframes slidein {
+  from {
+    translate: 100vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+@keyframes fadein {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(30%);
+  }
+}
+
+
+.features_point{
+  margin:auto;
+}
+
+ .features_head{
+  width: 100%;
+  padding-top: 75px;
+  margin-bottom: 2rem;
+  margin-left: 2.2rem;
+  color: #fff;
+
+}
+
+.features_points ul{
+  list-style: none;
+  max-width: 600px;
+}
+
+.features_points li{
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  color: #f1f1f1;
+}
+
+.features_points li::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 5px;
+  height:12px;
+  width: 2px;
+  background-color: red;
+}
+
+/* .fade-in {
+  animation: moving .6s ease;
+}
+@keyframes moving{
+  from{
+      transform:translateX(50px);
+      opacity:0;
+  }
+  to{
+      transform: translateX(0px);
+      opacity:1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  75%{
+    opacity: 0.79;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+/* .container_4{
+  width: 100%;
+  height:700px;
+  background-color:white;
+  padding:30px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+  border-radius:20px;
+}
+.tab_box{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  border-bottom:2px solid rgba(229,229,229);
+  position:relative; 
+}
+.tab_box .tab_btn{
+  font: 18px;
+  font-weight:600;
+  color:#919191;
+  background:none;
+  border:none;
+  padding:18px;
+  cursor:pointer;
+}
+.tab_box .tab_btn.active{
+  color:#7360ff;
+}
+.content_box2{
+  padding:20px;
+  height: 500px;
+
+}
+.content_box2 .content2{
+  display: none;
+  animation: moving .6s ease;
+}
+@keyframes moving{
+  from{
+      transform:translateX(50px);
+      opacity:0;
+  }
+  to{
+      transform: translateX(0px);
+      opacity:1;
+  }
+}
+.content_box2 .content2.active{
+  display:block;
+}
+.content_box2 .content2 h2{
+  margin-bottom: 10px;
+  
+}
+.line1{
+  position:absolute;
+  top:50px;
+  left:14px;
+  width:90px;
+  height:6px;
+  background-color:#7360ff;
+  border-radius:10px;
+  transition:all .4s ease-in-out
+}
+#a1{
+  height:400px;
+  width:800px;
+  margin-left: 300px;
+}
+pre{
+  margin-top: -280px;
+  margin-left: -90px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#b1{
+  padding:18px;
+  background-color:black;
+  color:white;
+  border:none;
+  border-radius:10px;
+  margin-left: 80px;
+  cursor:pointer;
+} */
+
+
+.tabContainer{
+  width: 100%;
+  height: 750px;
+  background: url(./Rides.avif);
+}
+.tabContainer .buttonContainer{
+  
+  height: 10%;
+  background-color: #21201f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: sticky;
+}
+
+.tabContainer .buttonContainer button{
+  width: auto;
+  height: 100%;
+  float: left;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #21201f;
+  position: relative;
+}
+.tabContainer .buttonContainer button::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 27px;
+  height:18px;
+  width: 2px;
+  background-color: rgb(255, 0, 0);
+}
+.tabContainer .buttonContainer span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  height: 100%;
+  letter-spacing: 1px;
+  float: left;
+  background-color: #21201f;
+  padding: 20px;
+  align-items: center;
+}
+.tabContainer .buttonContainer button:hover{
+  color: red;
+}
+
+.tabContainer .tabPannel{
+  height: 750px;
+  background-color: rgb(239, 127, 127);
+  color: white;
+  text-align: center;
+  padding-top: 105px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+  display: none;
+}
+/* .tabPannel:nth-child(1){
+  background: url(./gma-landing---image\ bullet.jpg);
+  background-size:contain;
+} */
+.tabPannel:nth-child(2){
+  background: url(./pangong-tso.avif);
+  background-size: cover;
+}
+.tabPannel:nth-child(3){
+  background: url(./leh-rider-support.avif);
+  background-size: cover;
+}
+.tabPannel:nth-child(4){
+  background: url(./himalayan-odyssey-2024.webp);
+}
+.tabPannel:nth-child(5){
+  background: url(./royal-enfield-trail-school-2024.png);
+}
+.tabPannel:nth-child(6){
+  background: url(./gt-cup-hero-desc.jpeg);
+}
+.tabPannel:nth-child(7){
+  background: url(./royal-enfield-rentals.avif);
+}
+.tabPannel:nth-child(8){
+  background: url(./royal-enfield-tours.avif);
+}
+
+
+.AppareltabContainer{
+  width: 100%;
+  height: 750px;
+  background: url(./header_banner-_desktop_1-Apparel.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.AppareltabContainer .buttonContainer{
+  height: 10%;
+  background-color: #21201f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: sticky;
+}
+.AppareltabContainer .buttonContainer button{
+  width: auto;
+  height: 100%;
+  float: left;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #21201f;
+  position: relative;
+}
+.AppareltabContainer .buttonContainer button::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 27px;
+  height:18px;
+  width: 2px;
+  background-color: rgb(255, 0, 0);
+}
+.AppareltabContainer .buttonContainer span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  height: 100%;
+  letter-spacing: 1px;
+  float: left;
+  background-color: #21201f;
+  padding: 20px;
+  align-items: center;
+}
+.AppareltabContainer .buttonContainer button:hover{
+  color: red;
+}
+
+.AppareltabContainer .AppareltabPannel{
+  height: 750px;
+  background-color: rgb(239, 127, 127);
+  color: white;
+  text-align: center;
+  padding-top: 105px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+  display: none;
+}
+
+.AppareltabPannel:nth-child(2){
+  background: url(./shotgun-650-motorcycle.avif);
+  background-size: cover;
+}
+.AppareltabPannel:nth-child(3){
+  background: url(./royal-enfield-x-alpinestar.jpg);
+  background-size: cover;
+}
+.AppareltabPannel:nth-child(4){
+  background: url(./miy-riding-jacket.avif);
+}
+.AppareltabPannel:nth-child(5){
+  background: url(./royal-enfield-tcx.avif);
+}
+
+
+.AccessoriestabContainer{
+  width: 100%;
+  height: 750px;
+  background: url(./Accessories2.avif);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.AccessoriestabContainer .buttonContainer{
+  height: 10%;
+  background-color: #21201f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: sticky;
+}
+.AccessoriestabContainer .buttonContainer button{
+  width: auto;
+  height: 100%;
+  float: left;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #21201f;
+  position: relative;
+}
+.AccessoriestabContainer .buttonContainer button::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 27px;
+  height:18px;
+  width: 2px;
+  background-color: rgb(255, 0, 0);
+}
+.AccessoriestabContainer .buttonContainer span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  height: 100%;
+  letter-spacing: 1px;
+  float: left;
+  background-color: #21201f;
+  padding: 20px;
+  align-items: center;
+}
+.AccessoriestabContainer .buttonContainer button:hover{
+  color: red;
+}
+
+.AccessoriestabContainer .AccessoriestabPannel{
+  height: 750px;
+  background-color: rgb(239, 127, 127);
+  color: white;
+  text-align: center;
+  padding-top: 105px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+  display: none;
+}
+
+.AccessoriestabPannel:nth-child(2){
+  background: url(./himalayan-homepage-accessories-miy.avif);
+  background-size: cover;
+}
+.AccessoriestabPannel:nth-child(3){
+  background: url(./shot-gun-gma-banner-1.avif);
+  background-size: cover;
+}
+
+
+
+.ustabContainer{
+  width: 100%;
+  height: 750px;
+  background: url(./dealers-home-new.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.ustabContainer .buttonContainer{
+  height: 10%;
+  background-color: #21201f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: sticky;
+}
+.ustabContainer .buttonContainer button{
+  width: auto;
+  height: 100%;
+  float: left;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #21201f;
+  position: relative;
+}
+.ustabContainer .buttonContainer button::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 27px;
+  height:18px;
+  width: 2px;
+  background-color: rgb(255, 0, 0);
+}
+.ustabContainer .buttonContainer span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  height: 100%;
+  letter-spacing: 1px;
+  float: left;
+  background-color: #21201f;
+  padding: 20px;
+  align-items: center;
+}
+.ustabContainer .buttonContainer button:hover{
+  color: red;
+}
+
+.ustabContainer .ustabPannel{
+  height: 750px;
+  background-color: rgb(239, 127, 127);
+  color: white;
+  text-align: center;
+  padding-top: 105px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 22px;
+  display: none;
+}
+
+.ustabPannel:nth-child(2){
+  background: url(./lifestyle\ branding\ store.jpg);
+  background-size: cover;
+}
+.ustabPannel:nth-child(3){
+  background: url(./royal-enfield-service-center-shivaksh-automobiles-llp-chhatarpur-extension-delhi-motorcycle-repair-and-services-ju2wm8po4i.avif);
+  background-size: cover;
+}
+.ustabPannel:nth-child(4){
+  background: url(./royal-enfield-spare-parts-1000x1000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ustabPannel:nth-child(5){
+  background: url(./royal-enfield-garage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottomtab{
+  background: #212121;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 40px;
+  align-items: center;
+  
+}
+.bottomContenttab{
+  width: 45%;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.bottomicon{
+  align-items: center;
+  text-decoration: none;
+}
+.hand-point{
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.map{
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.range{
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.bottomsubText{
+  color: #c2c0c0;
+  text-decoration: none;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+}
+
+.bottomsubText:hover{
+  color: red;
+}
+.bottomsubText i{
+  padding-top: 5px;
+  height: 10px;
+}
+.bottomsubText .rmap i{
+  padding-top: 10px;
+}
+.bottomsubText i:hover{
+  color: red;
+}
+.hand{
+  margin-bottom: 28px;
+}
+.rmap{
+  padding-left: 28px;
+}
+
+.rang{
+  padding-left: 20px;
+}
+
+.socialHandels{
+  display: flex;
+  float: right;
+  padding: 10px;
+  height: 100px;
+}
+.socialHandels p{
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.socialHandels ul{
+  display: flex;
+  padding: 10px;
+  width: 250px;
+}
+.socialHandels ul li{
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  padding-left: 40px;
+}
+.socialHandels ul li i{
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  padding-right: 15px;
+}
+.bottomLine{
+  width: 100%;
+  height: 0.08px;
+  background-color: #858383;
+  position: relative;
+  margin-top: 95px;
+}
+.footer{
+  display: flex;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 30px;
+  font-style: normal;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  word-break: break-all;
+  letter-spacing: 0.5px;
+  
+}
+.sec{
+  width: 30%;
+  font-weight: 500;
+  
+}
+.sec h2{
+    padding-left: 38px;
+    padding-top: 5px;
+}
+.sec ul li{
+  line-height: 35px;
+}
+
+#cursor{
+  position:fixed;
+  width:62px;
+  height:62px;
+  border:2px solid rgb(67, 12, 12);
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  top:0;
+  left:0;
+  pointer-events: none;
+  transition: .2s;
+}
+#cursor2{
+  position:fixed;
+  width:24px;
+  height:24px;
+  background-color: rgb(177, 18, 3);
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  top:0;
+  left:0;
+  pointer-events: none;
+  transition: .1s;
+}
